@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  width: 100%;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #111111;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header_logo {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header_nav {
+  display: flex;
+  gap: 14px;
+}
+
+.header_nav_link {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.header_nav_link:nth-child(1) {
+  color: #d9439a;
+}
+
+.header_nav_link:nth-child(2) {
+  color: #878331;
+}
+
+.header_nav_link:nth-child(3) {
+  color: #6745a8;
+}
+
+.hero {
+  padding: 30px 40px 20px;
+}
+
+.hero_title {
+  max-width: 900px;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -1px;
+}
+
+.projects {
+  padding: 0px 40px;
+}
+
+.project {
+  min-height: 250px;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  border-top: 1px solid #bdbdbd;
+}
+
+.project_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project_category {
+  margin-bottom: 3px;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.project_title {
+  margin-bottom: 5px;
+
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.project_link {
+  padding: 1px 6px;
+
+  border: 1px solid currentColor;
+  font-size: 9px;
+  text-decoration: none;
+}
+
+.project_image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-yoga .project_category,
+.project-yoga .project_title,
+.project-yoga .project_link {
+  color: #2f659e;
+}
+
+.project-artwork .project_category,
+.project-artwork .project_title,
+.project-artwork .project_link {
+  color: #c13f83;
+}
+
+.project-magazine .project_category,
+.project-magazine .project_title,
+.project-magazine .project_link {
+  color: #898530;
+}
+
+.project-photography .project_category,
+.project-photography .project_title,
+.project-photography .project_link {
+  color: #5d4497;
+}
+
+.project-design .project_category,
+.project-design .project_title,
+.project-design .project_link {
+  color: #32619b;
+}
+
+.about {
+  padding: 40px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.about_title {
+  max-width: 650px;
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.about_link {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid #111111;
+  color: #111111;
+  font-size: 9px;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 20px 40px 35px;
+}
+
+.footer_social {
+  padding-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.footer_link:nth-child(1) {
+  color: #c13f83;
+}
+
+.footer_link:nth-child(2) {
+  color: #6745a8;
+  text-align: center;
+}
+
+.footer_link:nth-child(3) {
+  color: #32619b;
+  text-align: right;
+}
+
+.footer_copyright {
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+}
