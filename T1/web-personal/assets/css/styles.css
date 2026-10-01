@@ -20,7 +20,10 @@ a {
 
 .header {
   width: 100%;
-  padding: 24px 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 48px 60px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,15 +36,18 @@ a {
 
   color: #111111;
   text-decoration: none;
-  font-size: 14px;
 }
 
-.header_logo {
-  width: 32px;
-  height: 32px;
+.logo {
+  width: 42px;
+  height: 42px;
 
   border-radius: 50%;
   object-fit: cover;
+}
+
+.header_name {
+  font-size: 18px;
 }
 
 .header_nav {
@@ -66,28 +72,39 @@ a {
   color: #6745a8;
 }
 
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
 .hero {
-  padding: 30px 40px 20px;
+  padding: 20px 0 35px;
 }
 
 .hero_title {
-  max-width: 900px;
-  font-size: 34px;
+  max-width: 1050px;
+
+  font-size: 48px;
   font-weight: 400;
-  line-height: 0.95;
-  letter-spacing: -1px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
 }
 
 .projects {
-  padding: 0px 40px;
+  width: 100%;
 }
 
 .project {
-  min-height: 250px;
-  padding: 20px 0;
+  width: 100%;
+  padding: 48px 0;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 52px;
+  align-items: start;
+
   border-top: 1px solid #bdbdbd;
 }
 
@@ -98,32 +115,58 @@ a {
 }
 
 .project_category {
-  margin-bottom: 3px;
-  font-size: 11px;
+  margin-bottom: 8px;
+
+  font-size: 12px;
   text-decoration: underline;
 }
 
 .project_title {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 
-  font-size: 27px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 1;
 }
 
 .project_link {
-  padding: 1px 6px;
+  padding: 2px 8px;
 
   border: 1px solid currentColor;
-  font-size: 9px;
+
+  font-size: 10px;
   text-decoration: none;
 }
 
 .project_image {
   width: 100%;
-  height: 100%;
+  max-width: 560px;
+  aspect-ratio: 1 / 1;
+
   display: block;
+  justify-self: end;
+
   object-fit: cover;
+}
+
+.project-yoga {
+  border-top-color: #7da3cf;
+}
+
+.project-artwork {
+  border-top-color: #d59aba;
+}
+
+.project-magazine {
+  border-top-color: #aaa765;
+}
+
+.project-photography {
+  border-top-color: #9883bd;
+}
+
+.project-design {
+  border-top-color: #7da3cf;
 }
 
 .project-yoga .project_category,
@@ -157,40 +200,55 @@ a {
 }
 
 .about {
-  padding: 40px;
+  padding: 75px 0;
+
   border-bottom: 1px solid #bdbdbd;
 }
 
 .about_title {
-  max-width: 650px;
-  margin-bottom: 12px;
-  font-size: 30px;
+  max-width: 750px;
+  margin-bottom: 18px;
+
+  font-size: 40px;
   font-weight: 400;
-  line-height: 0.95;
+  line-height: 1;
 }
 
 .about_link {
   display: inline-block;
-  padding: 2px 7px;
+
+  padding: 3px 8px;
+
   border: 1px solid #111111;
+
   color: #111111;
-  font-size: 9px;
+  font-size: 10px;
   text-decoration: none;
 }
 
 .footer {
-  padding: 20px 40px 35px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 48px 35px;
 }
 
 .footer_social {
-  padding-bottom: 35px;
+  padding: 45px 0;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   border-bottom: 1px solid #bdbdbd;
+}
+
+.footer_link {
+  font-size: 28px;
 }
 
 .footer_link:nth-child(1) {
   color: #c13f83;
+  text-align: left;
 }
 
 .footer_link:nth-child(2) {
@@ -204,9 +262,65 @@ a {
 }
 
 .footer_copyright {
-  padding-top: 30px;
-  font-size: 24px;
+  padding-top: 35px;
+
+  font-size: 26px;
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 20px 20px 40px;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header_name {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  .hero_title {
+    font-size: 34px;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 35px 0;
+  }
+
+  .project_title {
+    font-size: 28px;
+  }
+
+  .project_image {
+    max-width: none;
+    width: 100%;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about_title {
+    font-size: 32px;
+  }
+
+  .footer {
+    padding: 20px 20px 35px;
+  }
+
+  .footer_link {
+    font-size: 18px;
+  }
+
+  .footer_copyright {
+    font-size: 18px;
+  }
 }
