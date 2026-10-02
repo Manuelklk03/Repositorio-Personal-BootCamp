@@ -782,3 +782,13 @@ img {
     font-size: 18px;
   }
 }
+
+@media (min-width: 1280px) {
+  .site-header,
+  .home,
+  .project-detail,
+  .about-page,
+  .site-footer {
+    max-width: 1280px;
+  }
+}
